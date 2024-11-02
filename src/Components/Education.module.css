@@ -1,0 +1,33 @@
+.studydetail {
+  height: 100vh; /* Full viewport height */
+  width: 100vw; /* Full viewport width */
+  display: flex; /* Flexbox for layout */
+  flex-direction: column; /* Stack content vertically */
+  align-items: center; /* Center horizontally */
+}
+
+/* Flex container for alternating rows of education and skills */
+.container {
+  display: flex; /* Flexbox for layout */
+  flex-wrap: wrap; /* Allow wrapping to next line */
+  justify-content: space-around; /* Space between items */
+  padding: 20px; /* Padding around the container */
+}
+
+/* Text within the boxes */
+.box h2,
+.skill-box h2 {
+  margin-bottom: 20px; /* Space below headings */
+  text-align: center; /* Center text */
+}
+
+/* Animation classes for education and skills */
+
+.text {
+  color: white;
+}
+.edu {
+  background-color: #333;
+  height: 100%;
+  width: 100%;
+}

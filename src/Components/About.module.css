@@ -1,0 +1,57 @@
+/* About.module.css */
+
+.abouts {
+  background-color: #333;
+  height: 100vh;
+  width: 100vw;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.aboutheading,
+.secondheading {
+  color: white;
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+.images {
+  width: 150px;
+  border-radius: 50%;
+  margin: 20px 0;
+}
+
+.paragraph {
+  color: white;
+  padding: 0 5vw;
+}
+
+/* Responsive breakpoints */
+@media (max-width: 768px) {
+  .abouts {
+    padding: 15px;
+  }
+  .aboutheading,
+  .secondheading {
+    font-size: 2em;
+  }
+  .images {
+    width: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .aboutheading,
+  .secondheading {
+    font-size: 1.5em;
+  }
+  .images {
+    width: 100px;
+  }
+  .paragraph {
+    padding: 0 2vw;
+  }
+}

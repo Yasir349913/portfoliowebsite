@@ -1,0 +1,78 @@
+.projects {
+  height: 100vh; /* Full viewport height */
+  width: 100vw; /* Full viewport width */
+  background-color: #333;
+  display: flex; /* Center content vertically */
+  flex-direction: column; /* Stack items vertically */
+  justify-content: center; /* Center the children */
+}
+
+.projectimages {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Equal space between images */
+  padding: 0 20px; /* Padding for sides */
+}
+
+.imgs {
+  width: calc(25vw - 40px); /* Adjust width to account for margins */
+  margin-bottom: 25px; /* Space between rows */
+  animation: imges 3s infinite; /* Animation for images */
+}
+
+@keyframes imges {
+  0% {
+    transform: scale(0.95); /* Start at 95% scale */
+  }
+  50% {
+    transform: scale(1); /* Scale to normal */
+  }
+  100% {
+    transform: scale(0.95); /* Scale back down */
+  }
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+.imgs:hover {
+  cursor: pointer; /* Change cursor on hover */
+}
+@media screen and (min-width: 392px) and (max-width: 661px) {
+  .projectimgs {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .imgs {
+    width: 40vw;
+    height: 135px;
+  }
+  .projects {
+    height: 100%;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 50px) and (max-width: 391px) {
+  .projectimgs {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .imgs {
+    width: 60vw;
+    height: 135px;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .projects {
+    height: 100%;
+    width: 100%;
+  }
+}

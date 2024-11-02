@@ -1,0 +1,29 @@
+.skillname,
+.skillexplain {
+  color: white;
+}
+.skillset {
+  height: 230px;
+  width: 400px;
+  border: 4px solid rgb(88, 88, 218);
+  margin: 15px 10px;
+  padding: 23px 23px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.skillset {
+  transition: transform 0.3s ease-in-out;
+}
+
+.skillset:hover {
+  transform: scale(1.05);
+}
+@media screen and (min-width: 250px) and (max-width: 470px) {
+  .skillset {
+    width: 200px;
+    height: auto;
+  }
+  .skillname {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,31 @@
+.year,
+.school,
+.explain {
+  color: white;
+}
+.items {
+  height: 230px;
+  width: 400px;
+  border: 4px solid rgb(88, 88, 218);
+  margin: 15px 10px;
+  padding: 23px 23px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.items {
+  transition: transform 0.3s ease-in-out; /* Animation effect on hover or other interactions */
+}
+
+/* Optional hover effect */
+.items:hover {
+  transform: scale(1.05); /* Scale up on hover */
+}
+@media screen and (min-width: 250px) and (max-width: 470px) {
+  .items {
+    width: 200px;
+    height: auto;
+  }
+  .school {
+    font-size: 16px;
+  }
+}

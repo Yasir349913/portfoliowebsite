@@ -1,0 +1,25 @@
+.btn1 {
+  position: absolute;
+  top: 450px;
+  left: 240px;
+}
+.btn2 {
+  position: absolute;
+  top: 450px;
+  left: 450px;
+}
+.btn1:hover,
+.btn2:hover {
+  background-color: blue;
+  color: white;
+}
+@media screen and (min-width: 120px) and (max-width: 933px) {
+  .btn1 {
+    top: 600px;
+    left: 20px;
+  }
+  .btn2 {
+    top: 600px;
+    left: 150px;
+  }
+}

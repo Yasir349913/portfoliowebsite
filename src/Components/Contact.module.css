@@ -1,0 +1,71 @@
+.contactpage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Center items horizontally */
+  height: 100vh; /* Full viewport height */
+  width: 100vw; /* Full viewport width */
+  padding: 20px;
+  background-color: #333;
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Space between inputs */
+  width: 100%; /* Full width */
+  max-width: 400px; /* Limit maximum width */
+}
+
+.heading {
+  text-align: center; /* Center the heading */
+  margin-bottom: 30px;
+  color: white; /* Set text color for visibility */
+}
+
+input,
+textarea {
+  width: 100%; /* Full width of parent */
+  padding: 10px; /* Internal padding */
+  border: 1px solid #ccc; /* Border styling */
+  border-radius: 4px; /* Rounded corners */
+  font-size: 16px; /* Font size for inputs */
+}
+
+.btn3 {
+  max-width: 100px; /* Maximum width for button */
+  margin: auto; /* Center button */
+  padding: 10px; /* Padding for better touch target */
+  background-color: blue; /* Button background */
+  color: white; /* Button text color */
+  border: none; /* No border */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Change cursor on hover */
+}
+
+.btn3:hover {
+  background-color: darkblue; /* Darker shade on hover */
+}
+
+/* Media queries for better responsiveness */
+@media screen and (max-width: 768px) {
+  .inputContainer {
+    width: 90%; /* More width on smaller screens */
+  }
+
+  .heading {
+    font-size: 2em; /* Adjust heading size for smaller screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  input,
+  textarea {
+    padding: 8px; /* Adjust padding for smaller screens */
+    font-size: 14px; /* Smaller font size */
+  }
+
+  .btn3 {
+    width: 100%; /* Full width on small screens */
+  }
+}

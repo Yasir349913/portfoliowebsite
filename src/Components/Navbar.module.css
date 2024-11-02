@@ -1,0 +1,72 @@
+/* Main navbar styles */
+.navbar {
+  background-color: #333;
+  color: white;
+  padding: 10px 40px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.navLinks {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-right: auto; /* Pushes other items to the right */
+  padding-right: 20px;
+}
+
+.navLinks li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Hide menu items on small screens */
+.menu {
+  display: flex;
+  gap: 20px;
+}
+
+.menuButton {
+  display: none;
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+}
+
+/* Responsive styling */
+@media screen and (max-width: 768px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 5px;
+    width: 150px;
+  }
+
+  .menu.open {
+    display: flex;
+  }
+
+  .menuButton {
+    display: block;
+    margin-left: auto;
+  }
+
+  .name {
+    padding-right: 0;
+  }
+}

@@ -1,0 +1,75 @@
+.container {
+  color: white;
+  margin-left: 50px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.heading1 {
+  position: absolute;
+  top: 200px;
+}
+.heading2 {
+  position: absolute;
+  top: 260px;
+}
+.para {
+  position: absolute;
+  top: 320px;
+}
+.profileimage {
+  position: absolute;
+  left: 600px;
+  top: 150px;
+  width: 300px;
+}
+.linkedinlogo {
+  position: relative;
+  top: 380px;
+  left: 640px;
+  width: 80px;
+  border-radius: 50%;
+}
+@media screen and (min-width: 600px) and (max-width: 933px) {
+  .linkedinlogo {
+    position: relative;
+    top: 500px;
+    left: 440px;
+  }
+}
+@media screen and (min-width: 200px) and (max-width: 599px) {
+  .linkedinlogo {
+    position: relative;
+    top: 350px;
+    left: 440px;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 933px) {
+  .profileimage {
+    position: relative;
+    border-radius: 50%;
+    width: 200px;
+    top: 400px;
+    left: 100px;
+  }
+}
+@media screen and (min-width: 200px) and (max-width: 599px) {
+  .profileimage {
+    position: relative;
+    border-radius: 50%;
+    width: 200px;
+    top: 200px;
+    left: 50px;
+  }
+  .heading1 {
+    position: relative;
+    top: 20px;
+  }
+  .heading2 {
+    position: relative;
+    top: 50px;
+  }
+  .para {
+    position: relative;
+    top: 80px;
+  }
+}
